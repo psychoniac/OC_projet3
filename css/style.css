@@ -1,0 +1,34 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {}
+
+.nav_bar {}
+
+
+.search_bar {
+    display: flex;
+}
+
+.filters {
+    display: flex;
+}
+
+.accommodation {
+    display: flex;
+    flex-wrap: wrap;
+}
