@@ -1,24 +1,59 @@
+/*reset du css pour les naviguateurs*/
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
+/*variable pour les couleurs*/
+:root {
+    --primary-color: #0065FC;
+    --secondary-color: #DEEBFF;
+    --third-color: #F2F2F2;
+}
+
+/*Desktop first 
+propriété pour le body */
 body {
-    max-width: 1440px;
+    max-width: 1400px;
     margin: auto;
+    font-family: Raleway;
+    border: 1px solid red;
 
 }
 
+/*mis en forme du header*/
 header {
     display: flex;
     justify-content: space-between;
+
 }
 
-.logo {}
+.logo {
+    width: 60px;
+    margin-top: 45px;
+    margin-left: 55px;
+    margin-bottom: 65px;
+}
 
-.nav_bar {}
+.nav_bar {
+    margin-top: 45px;
+}
 
+.item_navbar {
+    display: inline-block;
+    margin-right: 75px;
+    text-decoration: none;
+    color: #000000;
+    ;
+}
+
+.item_navbar:hover {
+
+    border-top: 2px solid var(--primary-color);
+    color: var(--primary-color);
+
+}
 
 .search_bar {
     display: flex;
