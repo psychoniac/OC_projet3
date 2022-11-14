@@ -1,19 +1,19 @@
-/*reset du css pour les naviguateurs*/
+/* Reset du margin, padding, et box-sizing */
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
-/*variable pour les couleurs*/
+/* Déclaration des variable pour les couleurs */
 :root {
     --primary-color: #0065FC;
     --secondary-color: #DEEBFF;
     --third-color: #F2F2F2;
 }
 
-/*Desktop first 
-propriété pour le body */
+/* Desktop first */
+/* Propriété pour le body */
 body {
     max-width: 1400px;
     margin: auto;
@@ -22,38 +22,59 @@ body {
 
 }
 
-/*mis en forme du header*/
+/* Mis en forme du header */
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 
 }
 
 .logo {
-    width: 60px;
-    margin-top: 45px;
+    width: 61px;
+    height: 29px;
     margin-left: 55px;
-    margin-bottom: 65px;
+    margin-top: 44px;
+    margin-bottom: 63px;
+
 }
 
-.nav_bar {
-    margin-top: 45px;
+/* Barre de naviguation */
+.navbar {
+    display: flex;
+    width: 382px;
+    height: 19px;
+    margin-right: 77px;
 }
 
 .item_navbar {
-    display: inline-block;
-    margin-right: 75px;
-    text-decoration: none;
-    color: #000000;
-    ;
+    min-width: 50%;
+    list-style-type: none;
+    text-align: center;
+    padding-top: 48px;
 }
 
+.link_navbar {
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.link_navbar:hover {
+    color: var(--primary-color);
+}
+
+/* Gestion de la barre de selection de la navbar */
 .item_navbar:hover {
 
     border-top: 2px solid var(--primary-color);
     color: var(--primary-color);
 
 }
+
+
+
 
 .search_bar {
     display: flex;
