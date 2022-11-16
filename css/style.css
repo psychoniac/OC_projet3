@@ -27,12 +27,14 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: red;
+
 
 }
 
 .logo {
     width: 61px;
-    height: 29px;
+    height: 19px;
     margin-left: 55px;
     margin-top: 44px;
     margin-bottom: 63px;
@@ -40,11 +42,15 @@ header {
 }
 
 /* Barre de naviguation */
-.navbar {
-    display: flex;
-    width: 382px;
+nav {
+    width: 361px;
     height: 19px;
     margin-right: 77px;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
 }
 
 .item_navbar {
@@ -52,6 +58,8 @@ header {
     list-style-type: none;
     text-align: center;
     padding-top: 48px;
+
+
 }
 
 .link_navbar {
@@ -74,17 +82,36 @@ header {
 }
 
 
-
-
-.search_bar {
+/*footer*/
+footer {
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
+    background-color: var(--third-color);
+    padding-bottom: 58px;
 }
 
-.filters {
+.item_footer {
+    width: 33%;
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 45px;
+    line-height: 18.78px;
 }
 
-.accommodation {
-    display: flex;
-    flex-wrap: wrap;
+.item_title {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 20px;
+
+}
+
+.item_link {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
 }
