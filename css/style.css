@@ -17,13 +17,14 @@
 body {
     max-width: 1400px;
     margin: auto;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     border: 1px solid red;
 
 }
 
 /* Mis en forme du header */
 header {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -81,6 +82,28 @@ nav {
 
 }
 
+/* header responsive pour smartphone*/
+@media screen and (max-width: 400px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .logo {
+
+        margin-bottom: 0px;
+    }
+
+    .item_navbar {
+        padding-top: 0%;
+    }
+
+    nav {
+        margin: auto;
+    }
+}
 
 /*footer*/
 footer {
