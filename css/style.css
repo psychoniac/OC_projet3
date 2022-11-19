@@ -1,4 +1,5 @@
 /* Reset du margin, padding, et box-sizing */
+
 * {
     margin: 0%;
     padding: 0%;
@@ -18,7 +19,24 @@ body {
     max-width: 1400px;
     margin: auto;
     font-family: Raleway, sans-serif;
-    border: 1px solid red;
+
+
+}
+
+/*responsive tablette pour le body */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        width: 1024px;
+
+    }
+
+}
+
+/*responsive smartphone pour le body */
+@media screen and (max-width: 768px) {
+    body {
+        width: 375px;
+    }
 
 }
 
@@ -28,7 +46,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: red;
+
 
 
 }
@@ -45,13 +63,16 @@ header {
 /* Barre de naviguation */
 nav {
     width: 361px;
-    height: 19px;
     margin-right: 77px;
+
+
 }
 
 .navbar {
     display: flex;
     width: 100%;
+
+
 }
 
 .item_navbar {
@@ -60,7 +81,6 @@ nav {
     text-align: center;
     padding-top: 48px;
 
-
 }
 
 .link_navbar {
@@ -68,22 +88,49 @@ nav {
     color: black;
     font-size: 16px;
     font-weight: 500;
+    text-decoration: none;
 }
 
+/* Gestion de la barre de selection de la navbar */
 .link_navbar:hover {
     color: var(--primary-color);
 }
 
-/* Gestion de la barre de selection de la navbar */
-.item_navbar:hover {
+
+.navbar .item_navbar:hover {
 
     border-top: 2px solid var(--primary-color);
     color: var(--primary-color);
 
 }
 
+/* header responsive pour tablette */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+
+    .logo {
+        margin-left: 72px;
+        margin-bottom: 48px;
+
+
+    }
+
+    .navbar .item_navbar:hover {
+        border-top: none;
+    }
+
+    .link_navbar:hover {
+        text-decoration: underline;
+    }
+
+}
+
+
+
+
 /* header responsive pour smartphone*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
+
     header {
         display: flex;
         flex-direction: column;
@@ -92,18 +139,61 @@ nav {
     }
 
     .logo {
+        width: 61px;
+        margin-top: 21px;
+        margin-left: 157px;
 
         margin-bottom: 0px;
+
+    }
+
+
+
+    nav {
+        width: 100%;
+        margin: auto;
+
     }
 
     .item_navbar {
-        padding-top: 0%;
+        padding-bottom: 23px;
     }
 
-    nav {
-        margin: auto;
+    .navbar .item_navbar:hover {
+        border-top: none;
+        border-bottom: 3px solid var(--primary-color);
     }
+
+
+
+
+
 }
+
+/*sectiion activities*/
+#activities h2 {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.card_activities {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card_img {
+    width: 302px;
+    height: 445px;
+}
+
+.card_title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.78px;
+
+
+}
+
 
 /*footer*/
 footer {
@@ -137,4 +227,19 @@ footer {
     font-size: 16px;
     color: black;
     text-decoration: none;
+}
+
+/*footer responsive pour tablette*/
+@media screen and (min-width: 768px) and (max-width: 992px) {}
+
+/*footer responsive pour smartphone*/
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+
+    }
+
+    .item_footer {
+        width: 50%;
+    }
 }
