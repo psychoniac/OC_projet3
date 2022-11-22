@@ -287,6 +287,10 @@ nav {
 }
 
 /*sectiion activities*/
+#activities {
+    margin-bottom: 20px;
+}
+
 #activities h2 {
     margin-bottom: 18px;
 }
@@ -301,7 +305,10 @@ nav {
     height: 445px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     line-height: 0;
+    box-shadow: 5px 5px 5px 5px black;
 
 }
 
@@ -321,12 +328,44 @@ nav {
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+
 
 }
 
+/*responsive pour tablette de la partie activities*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #activities {
+        min-width: 875px;
+        height: 330px;
+
+    }
+
+    .card {
+        width: 180px;
+        height: 265px;
+    }
+
+    .card_img {
+        width: 180px;
+        height: 210px;
+
+    }
+
+    .card_title {
+        height: 55px;
+    }
+}
+
+/* section activities responsive pour smartphone*/
+@media screen and (max-width: 768px) {
+    #activities {
+        flex-direction: column;
+    }
+
+    .card_activities {
+        flex-direction: column;
+    }
+}
 
 /*footer*/
 footer {
