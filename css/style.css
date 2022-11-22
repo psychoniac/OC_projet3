@@ -286,13 +286,65 @@ nav {
 
 }
 
+/*section hebergement*/
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#accommodation {
+    width: 880px;
+    background-color: #F2F2F2;
+
+}
+
+#accommodation h2 {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.accommodation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.Card {
+    width: 245px;
+    height: 220px;
+    border-radius: 20px;
+    background-color: var(--third-color);
+}
+
+.Card_img {
+    width: 230px;
+    height: 150px;
+}
+
+/*icone étoile bleue*/
+i {
+    color: var(--primary-color);
+}
+
+/*changer la couleur d'une etoile*/
+.color {
+    color: var(--secondary-color);
+}
+
+
+
 /*sectiion activities*/
 #activities {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #activities h2 {
     margin-bottom: 18px;
+    font-size: 22px;
+    font-weight: 700;
+    padding-left: 25px;
 }
 
 .card_activities {
@@ -308,7 +360,8 @@ nav {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     line-height: 0;
-    box-shadow: 5px 5px 5px 5px black;
+    box-shadow: 5px 5px 5px black;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 
 }
 
@@ -340,6 +393,10 @@ nav {
 
     }
 
+    #activities h2 {
+        padding-left: 50px;
+    }
+
     .card {
         width: 180px;
         height: 265px;
@@ -353,6 +410,8 @@ nav {
 
     .card_title {
         height: 55px;
+
+
     }
 }
 
@@ -364,6 +423,22 @@ nav {
 
     .card_activities {
         flex-direction: column;
+
+    }
+
+    .card {
+        width: 335px;
+        height: 190px;
+    }
+
+    .card_img {
+        width: 335px;
+        height: 160px;
+    }
+
+    .card_title {
+        width: 335px;
+
     }
 }
 
