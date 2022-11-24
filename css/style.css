@@ -182,7 +182,7 @@ header {
 .logo {
     width: 61px;
     height: 19px;
-    margin-left: 55px;
+
     margin-top: 44px;
     margin-bottom: 63px;
 
@@ -191,9 +191,6 @@ header {
 /* Barre de naviguation */
 nav {
     width: 361px;
-    margin-right: 77px;
-
-
 }
 
 .navbar {
@@ -253,9 +250,6 @@ nav {
 
 }
 
-
-
-
 /* header responsive pour smartphone*/
 @media screen and (max-width: 768px) {
 
@@ -286,15 +280,55 @@ nav {
 
 }
 
+/* section recherche */
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+
+}
+
+h1+h2 {
+    font-size: 16px;
+    font-weight: 400;
+
+    margin-top: 10px;
+}
+
+.search_bar {
+    width: 330px;
+    display: flex;
+    margin-top: 20px;
+
+    margin-bottom: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+
+.filters {
+    width: 915px;
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 40px;
+}
+
+.info {
+
+    margin-bottom: 30px;
+}
+
 /*section hebergement*/
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #accommodation {
-    width: 880px;
+    width: 900px;
+    height: 630px;
     background-color: #F2F2F2;
+
 
 }
 
@@ -307,19 +341,27 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     margin-top: 10px;
 }
 
 .Card {
     width: 245px;
-    height: 220px;
+    height: 200px;
     border-radius: 20px;
     background-color: var(--third-color);
+    margin-bottom: 25px;
+    margin-top: 15px;
 }
 
 .Card_img {
     width: 230px;
     height: 150px;
+}
+
+.Card_txt {
+    width: 200px;
+    height: 40px;
 }
 
 /*icone étoile bleue*/
@@ -328,10 +370,20 @@ i {
 }
 
 /*changer la couleur d'une etoile*/
-.color {
+.star {
     color: var(--secondary-color);
 }
 
+.populaire {
+    width: 420px;
+    background-color: var(--third-color);
+    border-radius: 20px;
+}
+
+.populaire>h2 {
+    padding-top: 20px;
+    padding-left: 5px;
+}
 
 
 /*sectiion activities*/
@@ -344,12 +396,11 @@ i {
     margin-bottom: 18px;
     font-size: 22px;
     font-weight: 700;
-    padding-left: 25px;
 }
 
 .card_activities {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .card {
@@ -360,8 +411,9 @@ i {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     line-height: 0;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
 
 }
 
@@ -376,11 +428,14 @@ i {
 
 
 .card_title {
+    box-sizing: border-box;
+    height: 55px;
     font-weight: 700;
     font-size: 16px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
+    padding: 20px 0px 20px 20px;
+    border: 1px solid #D9D9D9;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
 
 }
@@ -400,6 +455,8 @@ i {
     .card {
         width: 180px;
         height: 265px;
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+
     }
 
     .card_img {
@@ -409,7 +466,10 @@ i {
     }
 
     .card_title {
+        width: 180px;
         height: 55px;
+        line-height: 19px;
+        padding: 10px 0px 0px 10px;
 
 
     }
@@ -418,17 +478,20 @@ i {
 /* section activities responsive pour smartphone*/
 @media screen and (max-width: 768px) {
     #activities {
-        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 80px;
     }
 
     .card_activities {
         flex-direction: column;
+        width: 340px;
 
     }
 
     .card {
         width: 335px;
         height: 190px;
+        margin-bottom: 20px;
     }
 
     .card_img {
@@ -438,26 +501,28 @@ i {
 
     .card_title {
         width: 335px;
+        height: 30px;
 
     }
 }
 
 /*footer*/
 footer {
-
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     background-color: var(--third-color);
     padding-bottom: 58px;
+    margin-right: 50px;
 }
 
 .item_footer {
 
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     padding-top: 45px;
-
+    padding-right: 250px;
 }
 
 .item_title {
@@ -478,7 +543,12 @@ footer {
 }
 
 /*footer responsive pour tablette*/
-@media screen and (min-width: 768px) and (max-width: 992px) {}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    footer {
+        justify-content: space-around;
+        padding-right: 200px;
+    }
+}
 
 /*footer responsive pour smartphone*/
 @media screen and (max-width: 768px) {
