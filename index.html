@@ -16,10 +16,8 @@
 </head>
 
 <body>
-    <!--emplacement du header-->
     <header>
         <img src="assets/logo/Booki.png" alt="logo de l'entreprise booki" class="logo">
-        <!--Emplacement de menu de naviguation-->
         <nav>
             <ul class="navbar">
                 <li class="item_navbar">
@@ -37,10 +35,12 @@
             <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
             <h2>En plein centre-ville ou en pleine nature</h2>
             <div class="search_bar">
-                <i class="fa-solid fa-location-dot"></i>
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
                 <form class="search_input">
-                    <input type="search" name="search" id="">
-                    <input type="button" value="rechercher">
+                    <input class="input_search" type="search" for="search">
+                    <input type="submit" value="Rechercher" id="search"></button>
                 </form>
             </div>
             <div class="filters">
@@ -122,27 +122,54 @@
                 </div>
                 <a href="#">Afficher plus</a>
             </section>
+
             <section class="populaire">
-                <h2>Les plus populaires</h2>
-                <div class="les+populaires">
-                    <article class="card6">
-                        <img src="" alt="">
+                <div class="title_populaire">
+                    <h2>Les plus populaires</h2>
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="itemPopulaire_container">
+                    <div class="item_populaire">
+                        <img class="img_item" src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                            alt="photo chambre de l'hotel le soleil du matin">
+                        <div class="txt_item">
+                            <h3>Hotel le soleil du matin</h3>
+                            <p>Nuit à partir de 128 e</p>
+                            <div class="blue_stars">
+                                <a href="#"><i></i></a>
+                                <a href="#"><i></i></a>
+                                <a href="#"><i></i></a>
+                                <a href="#"><i></i></a>
+                                <a href="#"><i></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item_populaire">
+                        <img class="img_item" src="assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                            alt="">
                         <h3></h3>
                         <p></p>
-                        <img src="" alt="">
-                    </article>
-                    <article class="card6">
-                        <img src="" alt="">
+                        <div class="blue_stars">
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                        </div>
+                    </div>
+                    <div class="item_populaire">
+                        <img class="img_item" src="assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                            alt="">
                         <h3></h3>
                         <p></p>
-                        <img src="" alt="">
-                    </article>
-                    <article class="card6">
-                        <img src="" alt="">
-                        <h3></h3>
-                        <p></p>
-                        <img src="" alt="">
-                    </article>
+                        <div class="blue_stars">
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                        </div>
+                    </div>
                 </div>
 
             </section>
