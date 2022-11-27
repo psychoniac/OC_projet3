@@ -1,0 +1,76 @@
+/*responsive tablette pour le body */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* header responsive pour tablette */
+    .logo {
+        margin-left: 72px;
+        margin-bottom: 48px;
+    }
+
+    nav {
+        width: 30%;
+    }
+
+    .navbar .item_navbar:hover {
+        border-top: none;
+    }
+
+    .link_navbar:hover {
+        text-decoration: underline;
+    }
+
+
+    /*responsive tablette pour la partie hébergement*/
+    .container {
+        flex-direction: column;
+    }
+
+    .itemPopulaire_container {
+        flex-direction: row;
+    }
+
+    .item_populaire {
+        width: 215px;
+    }
+
+
+    /*responsive pour tablette de la partie activities*/
+    #activities {
+        min-width: 875px;
+        height: 330px;
+
+    }
+
+    #activities h2 {
+        padding-left: 50px;
+    }
+
+    .card {
+        width: 180px;
+        height: 265px;
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .card_img {
+        width: 180px;
+        height: 210px;
+
+    }
+
+    .card_title {
+        width: 180px;
+        height: 55px;
+        line-height: 19px;
+        padding: 10px 0px 0px 10px;
+
+
+    }
+
+
+    /*footer responsive pour tablette*/
+    footer {
+        justify-content: space-around;
+        padding-right: 200px;
+    }
+}
