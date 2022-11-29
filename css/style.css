@@ -184,19 +184,11 @@ nav {
 
 .item_navbar {
     min-width: 50%;
-    list-style-type: none;
     text-align: center;
     padding-top: 48px;
 
 }
 
-.link_navbar {
-    display: inline-block;
-    color: black;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-}
 
 /* Gestion de la barre de selection de la navbar */
 .link_navbar:hover {
@@ -215,27 +207,21 @@ h1 {
 }
 
 h1+h2 {
-    font-size: 16px;
-    font-weight: 400;
+
     margin-top: 10px;
 }
 
 .search_bar {
-    box-sizing: content-box;
-    width: 332px;
+    width: 20%;
     display: flex;
-    align-items: center;
     margin-bottom: 30px;
     margin-top: 20px;
     border-radius: 20px;
-    border: 1px solid var(--third-color);
-
 
 }
 
+
 .icon {
-    width: 50px;
-    height: 49px;
     background-color: var(--third-color);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -245,18 +231,14 @@ h1+h2 {
     width: 14px;
     padding: 15px;
     color: black;
-
 }
-
 
 .search_input {
     display: flex;
-    align-items: center;
 }
 
 .input_search {
-    height: 49px;
-    border: none;
+    border: 1px solid var(--third-color);
 }
 
 #search {
@@ -272,23 +254,20 @@ h1+h2 {
 }
 
 
-/* filtres*/
+/* Section filtres */
 .filters {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 40px;
 }
 
-.filters_contener {
-    display: flex;
-    justify-content: space-evenly;
-}
 
 .filters>h3 {
     font-size: 18px;
     font-weight: 700;
     padding-left: 15px;
-    margin-right: 25px;
+    padding-right: 25px;
 }
 
 
@@ -296,16 +275,15 @@ h1+h2 {
 .filter {
 
     display: flex;
-    justify-content: center;
     align-items: center;
     border: 2px solid rgba(217, 217, 217, 1);
     border-radius: 25px;
-    height: 35px;
     font-size: 17px;
     font-weight: 700;
     margin-right: 25px;
 
 }
+
 
 .filter>h3 {
     padding: 10px;
@@ -314,11 +292,6 @@ h1+h2 {
 .icon_filter {
     padding: 10px;
 }
-
-.last_filter {
-    background-color: rgb(193, 235, 249);
-}
-
 
 .info {
     display: flex;
@@ -331,6 +304,17 @@ h1+h2 {
 
 }
 
+/* filtre etat hover */
+.filter:hover {
+    background-color: lightblue;
+}
+
+.last_filter {
+    background-color: rgb(193, 235, 249);
+}
+
+
+
 /*section hebergement*/
 .container {
     display: flex;
@@ -339,8 +323,8 @@ h1+h2 {
 }
 
 #accommodation {
-    width: 900px;
-    height: 630px;
+    width: 65%;
+    height: 660px;
     background-color: #F2F2F2;
     border-radius: 20px;
 
@@ -367,8 +351,6 @@ h1+h2 {
 }
 
 .Card {
-    display: flex;
-    flex-direction: column;
     width: 250px;
     height: 240px;
     border-radius: 20px;
@@ -391,7 +373,6 @@ h1+h2 {
 }
 
 .Card_txt {
-    width: 200px;
     height: 40px;
     padding-left: 20px;
 }
@@ -431,13 +412,10 @@ i {
 
 /* section les + populaire */
 .populaire {
-    width: 420px;
-    height: 625px;
+    width: 30%;
+    height: 660px;
     background-color: var(--third-color);
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .title_populaire {
