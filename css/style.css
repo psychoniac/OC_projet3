@@ -158,6 +158,15 @@ a {
 
 }
 
+h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 700;
+}
+
 /* Mis en forme du header */
 header {
     display: flex;
@@ -212,19 +221,16 @@ h1+h2 {
 
 .search_bar {
     display: flex;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    margin: 20px 0 30px;
     border-radius: 20px;
 }
 
 .icon {
     background-color: var(--third-color);
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px 0 0 20px;
 }
 
 .search_icon {
-    width: 14px;
     padding: 15px;
     color: black;
 }
@@ -241,16 +247,12 @@ h1+h2 {
 
 .search_button {
     width: 135px;
-    height: 49px;
     font-size: 18px;
     font-weight: 700;
     background-color: var(--primary-color);
     color: var(--third-color);
     border: none;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    text-align: center;
-
+    border-radius: 0 20px 20px 0;
 }
 
 .loupe_icon {
@@ -268,9 +270,7 @@ h1+h2 {
 
 .filters>h3 {
     font-size: 18px;
-    font-weight: 700;
-    padding-left: 15px;
-    padding-right: 25px;
+    padding: 0 25px 0 15px;
 }
 
 .filter {
@@ -278,24 +278,11 @@ h1+h2 {
     border: 2px solid rgba(217, 217, 217, 1);
     border-radius: 25px;
     font-size: 17px;
-    font-weight: 700;
     margin-right: 25px;
 }
 
 .filter>h3 {
     padding: 10px;
-}
-
-.info {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-
-.info>p {
-    padding-left: 5px;
 }
 
 .icon_filter {
@@ -307,20 +294,35 @@ h1+h2 {
     background-color: rgb(193, 235, 249);
 }
 
-/* changer la couleur de l'icone*/
+/*Lien information avec icone en format SVG */
+.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info>p {
+    padding-left: 5px;
+}
+
+/* Class qui change la couleur des étoile de notation en bleu*/
 .icon_blue {
     color: var(--primary-color);
 }
 
-/*section hebergement*/
+/* Container des deux sections hebergement et les plus populaire*/
 .container {
     display: flex;
     justify-content: space-between;
 }
 
+/*section hebergement*/
+
 #accommodation {
     width: 65%;
     height: 625px;
+    min-width: 45%;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
@@ -330,11 +332,7 @@ h1+h2 {
 }
 
 #accommodation h2 {
-    padding-top: 42px;
-    padding-left: 40px;
-    padding-bottom: 50px;
-    font-size: 22px;
-    font-weight: 700;
+    padding: 42px 0px 50px 40px;
 }
 
 .accommodation {
@@ -345,40 +343,32 @@ h1+h2 {
 }
 
 /* partie cartes hébergement*/
-.Card {
-
+.card {
     height: 200px;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.Card_img {
+.card__img {
     width: 95%;
     height: 120px;
     object-fit: fill;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-top: 5px;
+    border-radius: 20px 20px 0 0;
+    padding: 5px 0 5px 5px;
 }
 
-.star {
-    padding-left: 20px;
-}
-
-.Card_txt {
+.card__txt {
     height: 40px;
     padding-left: 20px;
 }
 
-.Card_txt>h3 {
-    font-weight: 700;
+.card__txt>h3 {
     line-height: 19px;
 }
 
-.card_txt>p {
+.card__txt>p {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -389,7 +379,7 @@ h1+h2 {
     font-weight: 600;
 }
 
-/*Lien d'information*/
+/*Lien afficher plus*/
 .link_info {
     position: absolute;
     left: 120px;
@@ -398,34 +388,35 @@ h1+h2 {
     font-size: 18px;
 }
 
-/* div pour les etoiles de notation*/
-.stars {
+/* Propriété qui concerne les étoiles de notation*/
+.card__stars {
     margin-top: 10px;
+    padding-left: 20px;
 }
 
-/*changer la couleur d'une etoile*/
 .grey_star {
     color: lightgrey;
 }
 
+.stars_paddingTop {
+    padding-top: 25px;
+}
 
 /* section les + populaire */
 .popular {
     width: 30%;
     height: 625px;
-    max-width: 30%;
+    min-width: 20%;
     background-color: var(--third-color);
     border-radius: 20px;
 }
 
 .popular__title {
-    width: 345px;
+    width: 80%;
     display: flex;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 40px;
+    padding: 40px 0 0 20px;
     font-size: 22px;
-    font-weight: 700;
     margin-bottom: 50px;
 }
 
@@ -440,7 +431,6 @@ h1+h2 {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
 }
 
 .container_popular-item>a {
@@ -452,9 +442,10 @@ h1+h2 {
     background-color: white;
     height: 150px;
     display: flex;
+    justify-content: stretch;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
-
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .img__item {
@@ -462,8 +453,7 @@ h1+h2 {
     height: 140px;
     object-fit: fill;
     border: 5px solid #FFFF;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px 0 0 20px;
 }
 
 .popular__item-txt {
@@ -472,34 +462,25 @@ h1+h2 {
 }
 
 .popular__item-txt>h3 {
-    font-size: 16px;
-    font-weight: 700;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    padding: 15px 0 20px 0;
 }
 
 .popular__item-txt>p {
     font-size: 14px;
-    font-weight: 400;
     padding-bottom: 40px;
 }
 
 .popular__item-txt span {
-    font-size: 14px;
     font-weight: 600;
 }
 
-
 /*sectiion activities*/
 #activities {
-    margin-bottom: 20px;
-    margin-top: 60px;
+    margin: 60px 0 20px 0;
 }
 
 #activities h2 {
     margin-bottom: 18px;
-    font-size: 22px;
-    font-weight: 700;
 }
 
 .activities__cards {
@@ -507,35 +488,31 @@ h1+h2 {
     justify-content: space-between;
 }
 
+.activities__cards a {
+    width: 20%;
+}
+
 /*cartes des activités*/
-.card {
-    width: 300px;
+.activities__card {
     height: 445px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px;
     line-height: 0;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card>img {
-    width: 300px;
+.activities__card>img {
+    width: 100%;
     height: 390px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px 20px 0 0;
 }
 
-.card__title {
+.activities__cardTitle {
     box-sizing: border-box;
     height: 55px;
-    font-weight: 700;
-    font-size: 16px;
     padding: 20px 0px 20px 20px;
     border: 1px solid #D9D9D9;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 0 0 20px 20px;
 }
 
 /*footer*/
@@ -545,29 +522,19 @@ footer {
     justify-content: space-evenly;
     background-color: var(--third-color);
     padding-bottom: 58px;
-    margin-right: 50px;
 }
 
 .footer__item {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    padding-top: 45px;
-    padding-right: 250px;
+    padding: 45px 250px 0 0;
 }
 
 .footer__item-title {
-    font-family: Raleway;
-    font-weight: 700;
     font-size: 18px;
     padding-bottom: 20px;
 }
 
 .footer__item-link {
-    font-family: Raleway;
-    font-weight: 400;
-    font-size: 16px;
-    color: black;
-    text-decoration: none;
     line-height: 18.78px;
 }
