@@ -1,9 +1,5 @@
 /*Responsive smartphone*/
 @media screen and (max-width: 768px) {
-    a {
-        display: inline-block;
-        width: 100%;
-    }
 
     .container_principal {
         padding-left: 0px;
@@ -48,29 +44,30 @@
         line-height: 26px;
     }
 
-    #search {
+    .search_txt {
         visibility: hidden;
-    }
-
-    .contener_icon {
-        position: static;
-        visibility: visible;
-        background-color: blue;
-        width: 50px;
-        border-bottom-right-radius: 15px;
-        border-top-right-radius: 15px;
+        position: absolute;
     }
 
     .loupe_icon {
         color: white;
-        position: relative;
-        top: 15px;
-        left: 15px;
+        visibility: visible;
+        position: static;
+
+    }
+
+    .search_button {
+        width: 50px;
     }
 
     /* responsive smartphone pour la partie filtres*/
     .filter {
         margin-bottom: 5px;
+    }
+
+    .filters>h3 {
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     /*les + populaire*/
