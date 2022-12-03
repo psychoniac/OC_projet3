@@ -1,5 +1,10 @@
 /*Responsive smartphone*/
 @media screen and (max-width: 768px) {
+    a {
+        display: inline-block;
+        width: 100%;
+    }
+
     .container_principal {
         padding-left: 0px;
         min-width: 365px;
@@ -48,6 +53,7 @@
     }
 
     .contener_icon {
+        position: static;
         visibility: visible;
         background-color: blue;
         width: 50px;
@@ -63,12 +69,6 @@
     }
 
     /* responsive smartphone pour la partie filtres*/
-
-
-    .filters {}
-
-
-
     .filter {
         margin-bottom: 5px;
     }
@@ -89,44 +89,66 @@
 
     .popular__title {
         width: auto;
-        padding-left: 5px;
+        padding-left: 0px;
+        justify-content: space-around;
+    }
+
+    .popular__title>h2 {
+        padding-left: 0px;
     }
 
     .popular__item {
         width: 95%;
         height: 145px;
+        justify-content: flex-start;
+    }
+
+    .img__item {
+        height: 135px;
+        object-fit: cover;
+
+    }
+
+    .stars {
+        padding-left: 20px;
     }
 
     /* partie hebergement */
     #accommodation {
         width: 100%;
+        height: 1250px;
         max-width: none;
         background-color: white;
         display: flex;
         flex-direction: column;
+        margin-bottom: 100px;
     }
 
     #accommodation>h2 {
         text-align: left;
-        padding-bottom: 0px;
+        padding-bottom: 20px;
+        padding-top: 25px;
     }
 
     .accommodation {
-        height: 1250px;
         flex-direction: column;
-        align-items: center;
         padding-left: 0px;
     }
 
     .Card {
-        width: 95%;
+        width: 100%;
         height: 200px;
+
+    }
+
+    .Card_img {
+        object-fit: cover;
 
     }
 
     .link_info {
         position: static;
-        margin-top: 0px;
+        margin-top: 20px;
 
 
     }
@@ -137,6 +159,7 @@
         height: 900px;
         margin-top: 100px;
         margin-bottom: 80px;
+        margin-left: 20px;
     }
 
     .activities__cards {
@@ -154,6 +177,7 @@
     .card>img {
         width: 100%;
         height: 160px;
+        object-fit: cover;
     }
 
     .card__title {
@@ -165,6 +189,7 @@
     /*footer responsive pour smartphone*/
     footer {
         flex-direction: column;
+        padding-left: 20px;
 
     }
 

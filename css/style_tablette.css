@@ -37,18 +37,25 @@
     }
 
     .link_info {
-        position: static;
+        left: 80px;
+
     }
 
     .popular {
         width: 100%;
         max-width: none;
+        height: 275px;
 
     }
 
     .container_popular-item {
         flex-direction: row;
 
+    }
+
+    .popular__title {
+        width: auto;
+        padding-left: 0px;
     }
 
     .itemPopulaire_container {
@@ -59,6 +66,9 @@
         width: 215px;
     }
 
+    .stars {
+        padding-left: 15px;
+    }
 
     /*responsive pour tablette de la partie activities*/
 
